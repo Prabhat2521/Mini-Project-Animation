@@ -1,0 +1,157 @@
+.scenery{
+    position: absolute;
+}
+.sun{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: rgb(243, 243, 87);
+    position: absolute;
+    left: 41%;
+    top:20%;
+    animation: movesun 3s infinite alternate;
+    /* z-index: 1; */
+}
+
+.clouds{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.cloud{ 
+    margin-top: 75px;
+    width: 219px;
+    height: 78px;
+    background: #ECEFF1;
+    box-shadow: 2px 3px rgb(0 0 0 / 20%);
+    border-radius: 100px;
+    z-index: 1;
+    /* position: relative; */
+}
+ .cloud::after, .cloud::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud::after{
+    width: 76px;
+    height: 76px;
+    top: -74px;
+    left: -81px;
+ }
+ .cloud::before{
+    width: 105px;
+    height: 105px;
+    top: -63px;
+    left: 98px;
+ }
+ .cloud1{ 
+    margin-top: 75px;
+    width: 219px;
+    height: 78px;
+    background: #ECEFF1;
+    box-shadow: 2px 3px rgb(0 0 0 / 20%);
+    border-radius: 100px;
+    z-index: 1;
+    /* position: relative; */
+    animation: movecloud1 6s infinite alternate;
+ 
+ }
+ .cloud1::after, .cloud1::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud1::after{
+    width: 76px;
+    height: 76px;
+    top: -74px;
+    left: -81px;
+ }
+ .cloud1::before{
+    width: 105px;
+    height: 105px;
+    top: -63px;
+    left: 98px;
+ }
+ .cloud2{ 
+    margin-top: 75px;
+    width: 219px;
+    height: 78px;
+    background: #ECEFF1;
+    box-shadow: 2px 3px rgb(0 0 0 / 20%);
+    border-radius: 100px;
+    /* z-index: 1; */
+    /* position: relative; */
+    /* animation-direction: alternate-reverse; */
+ 
+ }
+ .cloud2::after, .cloud2::before{
+     content:"";
+     position:relative;
+     display:inline-block;
+     background:inherit;
+     border-radius:inherit;
+ }
+ .cloud2::after{
+    width: 76px;
+    height: 76px;
+    top: -74px;
+    left: -81px;
+ }
+ .cloud2::before{
+    width: 105px;
+    height: 105px;
+    top: -63px;
+    left: 98px;
+ }
+.mountain{
+    display: flex;
+}
+.mountain1{
+    height:200px;
+    border-left: 225px solid transparent;
+    border-right: 382px solid transparent;
+    border-bottom: 149px solid #3678B8;
+}
+.mountain2{
+    margin-left: -421px;
+    border-left: 225px solid transparent;
+    border-right: 195px solid transparent;
+    border-bottom: 149px solid #3678B8;
+
+         
+ }
+ .mountain3{
+    border-left: 225px solid transparent;
+    border-right: 251px solid transparent;
+    border-bottom: 149px solid #3678B8;
+    margin-left: -239px;
+         
+ }
+
+ @keyframes movesun {
+     to{
+         top:0%;
+     }
+
+     
+ }
+
+ @keyframes movecloud1 {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 26%;
+    }
+ }
+
+ 
+
+
+ 

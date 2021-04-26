@@ -1,0 +1,42 @@
+body>div{
+    display: flex;
+   /* justify-content: space-around; */
+   margin-top:80px;
+}
+
+.box-1{
+    width:100px;
+    height:100px;
+    background-color: #F96C72;
+    animation: 5s mymove infinite;
+    animation-direction: alternate;
+    position: relative;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.box-2{
+    width:100px;
+    height:100px;
+    background-color: #967DFC;
+    opacity: 0.8;
+}
+
+
+@keyframes mymove {
+    /* 0% {left: 0px;}
+    10%{left:50px;}
+    20% {left: 100px;}
+    30% {left: 150px;}
+    40%{left:200px;}
+    50% {left: 250px;}
+    60%{left:300px;}
+    70% {left: 350px;}
+    80%{left:400px;}
+    90% {left: 450px;}
+    100%{left:500px;} */
+    from{left:0px;
+        transform: rotate(0deg);}
+    to{left:500px;
+        transform: rotate(40deg);}
+}

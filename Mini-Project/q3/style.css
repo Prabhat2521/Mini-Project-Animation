@@ -1,0 +1,12 @@
+.heart{
+    font-size: 150px;
+    /* Margin auto ? why not working */
+    text-align:center;
+    color:rgb(220, 20, 60);
+    animation: beat .25s infinite alternate;
+}
+
+@keyframes beat {
+    to{transform: scale(1.4);}
+    
+}
